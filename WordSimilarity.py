@@ -3,7 +3,9 @@ Source From...
 Link: https://www.kaggle.com/code/cdabakoglu/word-vectors-cosine-similarity/notebook
 Author: Caner Dabakoglu
 
-uses glove.txt
+uses glove.6B.100d.txt
+from: https://www.kaggle.com/code/cdabakoglu/word-vectors-cosine-similarity/data
+Note: it's a large file (339,372 KB)
 '''
 
 import numpy as np
