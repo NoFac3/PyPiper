@@ -1,5 +1,5 @@
 # PyPiper
 
-This is a project to develop an intelligent chatbot
+This is a chatbot project.
 
-Work in progress - Currently only uploading components of the program
+Work in progress - Currently only uploading components of the program.
