@@ -1,0 +1,94 @@
+{
+  "intents": [
+    {
+      "tag": "Are_you_sure",
+      "patterns": [ "are you sure" ],
+      "responses": [ "I am *adv* sure" ],
+      "context_set": ""
+    },
+    {
+      "tag": "Used_To",
+      "patterns": [ "are you used to" ],
+      "responses": [ "I am *adv* used to *context*" ],
+      "context_set": ""
+    },
+    {
+      "tag": "Be_Careful",
+      "patterns": [ "be careful with", "i would be careful if'" ],
+      "responses": [ "I will","I will do my best" ],
+      "context_set": ""
+    },
+    {
+      "tag": "Doesnt_Mean",
+      "patterns": [ "but this doesnt mean that", "but that doesnt imply" ],
+      "responses": [ "What does *context* mean to you?" ],
+      "context_set": ""
+    },
+    {
+      "tag": "Compared_To",
+      "patterns": [ "compared to *subject*, *compair* *context*" ],
+      "responses": [ "Why is *compair* more *context* than *subject*?" ],
+      "context_set": ""
+    },
+    {
+      "tag": "Use_To",
+      "patterns": [ "did you use to *context*","you use to *context*, didnt you" ],
+      "responses": [ "*yes-no*, I *adv* *context*","*yes-no*" ],
+      "context_set": ""
+    },
+    {
+      "tag": "Now_I_dont",
+      "patterns": [ "I used to *context* but now I dont" ],
+      "responses": [ "What made you stop *context*?" ],
+      "context_set": ""
+    },
+    {
+      "tag": "Dont_ever",
+      "patterns": [ "dont ever *context*"],
+      "responses": [ "Why?" ],
+      "context_set": ""
+    },
+    {
+      "tag": "Agree",
+      "patterns": [ "do you agree *context*","dont you agree" ],
+      "responses": [ "*yes-no*, I *adv* agree.","*yes-no*","I *adv* agree" ],
+      "context_set": ""
+    },
+    {
+      "tag": "willAgree",
+      "patterns": [ "will *pnn* agree *context*" ],
+      "responses": [ "*yes-no*, I think *pnn* will *adv* agree" ],
+      "context_set": ""
+    },
+    {
+      "tag": "would_Mind",
+      "patterns": [ "would you mind if *context*","do you mind if *context*" ],
+      "responses": [ "*yes-no*. I would *adv* mind", "I would *adv* mind" ],
+      "context_set": ""
+    },
+    {
+      "tag": "Do_you_feel",
+      "patterns": [ "do you feel like *context*" ],
+      "responses": [ "*yes-no*, I do *adv* feel like *context*" ],
+      "context_set": ""
+    },
+    {
+      "tag": "where_go",
+      "patterns": [ "where do you want to go" ],
+      "responses": [ "Anywhere and everywhere." ],
+      "context_set": ""
+    },
+    {
+      "tag": "Shouldnt_We",
+      "patterns": [ "shouldnt *pnn* *context*" ],
+      "responses": [ "*yes-no*, *pnn* should *adv* *context*" ],
+      "context_set": ""
+    },
+    {
+      "tag": "Cant_Wait",
+      "patterns": [ "*pnn* cant wait to *context*", "*pnn* cant wait" ],
+      "responses": [ "" ],
+      "context_set": ""
+    }
+  ]
+}
