@@ -2,16 +2,6 @@ from nltk.stem import WordNetLemmatizer as WNL
 import spacy
 nlp = spacy.load('en_core_web_lg')
 
-def TokenizeOG(words):
-    tokens = nlp(words)
-    for token in token1:
-        text = token.text
-        blnVector = token.has_vector
-        vector_norm = token.vector_norm
-        Out_of_Vocab = token.is_oov
-    token1, token2 = tokens[0], tokens[1]
-    return token1, token2
-
 def Tokenize(word):
     token = nlp(word)
     return token
