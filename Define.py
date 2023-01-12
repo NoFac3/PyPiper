@@ -3,33 +3,43 @@ nltk.download("wordnet")
 nltk.download('omw-1.4')
 from nltk.corpus import wordnet
 from py_thesaurus import Thesaurus
-from nltk.stem import WordNetLemmatizer
+from nltk.stem import WordNetLemmatizer as WNL
+import Memory as M
 
-class Define(object):
-    def wordTag(self,user_input):
+def wordTag(self,user_input):
         words = nltk.word_tokenize(user_input)
         tag = nltk.pos_tag(words)
         return tag
 
-    def getDef(self,w):
+def RootWord(word):
+    lem = WNL()
+    w = lem.lemmatize("".join(word))
+    return w
+
+def getDef(w):
         word = w
-        if w =="you":
-            defin = {"1":"the pronoun of the second person singular or plural, used of the person or persons being addressed, in the nominative or objective case:","2":"one; anyone; people in general:","3":"(used in apposition with the subject of a sentence, \n\t\t    sometimes repeated for emphasis following the subject):","4":"Informal. (used in place of the pronoun your before a gerund):"}
-        else:
-            try:
-                lemmatizer = WordNetLemmatizer()
-                w = lemmatizer.lemmatize(w,pos=wtype)
+        try:
+                w = RootWord(word)
                 wtype = wordnet.synsets(w)
                 wType = wtype.pos()
                 wordType = w+"."+wType+".01"
                 defin = wordnet.synset(wordType).definition()
-            except:
+        except:
                 print(f"Error [{word}<--->{w}]")
                 wtype = ""
                 defin = ""
+        if defin == "":
+                data,keys = M.ReadJson("dictionary.json")
+                for k in keys:
+                    if k==w:
+                        defin = data[k]
+                if defin == "":
+                    for k in keys:
+                        if k==word:
+                            defin = data[k]
         return defin
 
-    def getSynonym(self,w):
+def getSynonym(w):
         synonyms=[]
         for syn in wordnet.synsets(w):
             for lm in syn.lemmas():
@@ -44,7 +54,7 @@ class Define(object):
             [syn.append(x) for x in synonyms if x not in syn]
         return syn
 
-    def getAntonym(self,w):
+def getAntonym(w):
         antonyms = []
         for syn in wordnet.synsets(w):
             for lm in syn.lemmas():
@@ -60,7 +70,7 @@ class Define(object):
             [ant.append(x) for x in antonyms if x not in ant]
         return ant
 
-    def getThesarus(self,w):
+def getThesarus(w):
         thesaurus = Thesaurus(w)
         defin = thesaurus.get_definition()
         syn = thesaurus.get_synonym()
