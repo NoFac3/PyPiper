@@ -1,5 +1,4 @@
 {
-  // positive words starting with the letter a
   "absolutely": ["with no qualification restriction or limitation"],
   "abundant": [ "existing or available in large quantities" ],
   "accessible": [ "friendly and amicable to talk with" ],
@@ -19,7 +18,6 @@
   "assure":  [ "tell someone something positively to dispel any doubts" ],
   "attractive": [ "being fascinating and mesmerizing" ],
   "awesome": [ "something breathtakingly amazing" ],
-  // positive words starting with the letter b
   "baronial": [ "impressive in appearance" ],
   "beaming":  [ "radiating" ],
   "beautiful": [ "having qualities that delight and pleases the senses" ],
@@ -32,7 +30,6 @@
   "brainy": [ "smart" ],
   "breathtaking": [ "awe-inspiring" ],
   "bubbly": [ "full of cheerful high spirits" ],
-  // positive words starting with the letter c
   "centered":  [ "goal-oriented" ],
   "champion": [ "holding first place in a contest" ],
   "charismatic": [ "possessing an extraordinary ability to attract" ],
@@ -48,7 +45,6 @@
   "communicative": [ "able to communicate in a good and productive way" ],
   "constant": [ "steadfast in purpose" ],
   "courageous": [ "possessing courage" ],
-  // positive words starting with the letter d
   "definite": [ "free from doubt" ],
   "delectable": [ "greatly pleasing" ],
   "delicious": ["highly pleasing to the senses"],
@@ -59,7 +55,6 @@
   "down-to-earth": [ "realistic" ],
   "dreamy": [ "fantasy-like" ],
   "dynamite": ["outstanding" ],
-  // positive words starting with the letter e
   "ecstatic": [ "pleasurable" ],
   "electrifying": [ "causing a surge of excitement or emotion" ],
   "employable": [ "one who is qualified and ready to work" ],
@@ -74,7 +69,6 @@
   "exciting": [ "stimulating interest" ],
   "exhilarating": ["making lively" ],
   "exultant": [ "characterized by rejoicing" ],
-  // positive words starting with the letter f
   "fab": [ "extremely pleasing" ],
   "fain": [ "pleased or willing under the circumstances" ],
   "fantastic": [ "extraordinarily good or attractive" ],
@@ -85,7 +79,6 @@
   "fiery": [ "passionate and burning strongly and brightly" ],
   "friend": [ "a person whom one knows and with whom one has a bond of mutual affection" ],
   "fun": [ "enjoyable" ],
-  // positive words starting with the letter g
   "gallant": [ "honorable and heroic" ],
   "gay": ["lighthearted and carefree" ],
   "genuine": [ "authentic" ],
@@ -97,14 +90,12 @@
   "grandiose": [ "characterized by the greatness of intent" ],
   "greatest": [ "highest in quality or size" ],
   "gumptious": [ "having good judgment and perception" ],
-  // positive words starting with the letter h
   "happy": [ "marked by good luck" ],
   "heavenly": [ "extremely pleasurable or good" ],
   "honorable": [ "worthy of respect or honor" ],
   "hospitable": [ "generous or favorable towards quests" ],
   "humanitarian": [ "having concern for helping and improve welfare and happiness of humans" ],
   "hypnotic": [ "attracting interest as if by spell" ],
-  // positive words starting with the letter i
   "ideal": [ "considered the best of its kind or highly satisfactory" ],
   "imaginative": [ "creative" ],
   "impeccable": [ "flawless" ],
@@ -116,7 +107,6 @@
   "instinctive": [ "driven or acted by impulse and without thinking" ],
   "intellectual": [ "clever" ],
   "irresistible": [ "impossible to resist" ],
-  // positive words starting with the letter j
   "jammy": [ "lucky" ],
   "jesting": [ "light-hearted" ],
   "jolly": [ "full of good humor and merry spirits" ],
@@ -125,13 +115,11 @@
   "judicious": [ "exhibiting or having sound judgment" ],
   "juicy": [ "enticing" ],
   "just": [ "righteous" ],
-  // positive words starting with the letter k
   "keen": [ "intellectual quickness" ],
   "kind-hearted": [ "having a friendly and cheerful disposition" ],
   "knightly": [ "chivalrous" ],
   "knockout": [ "strikingly impressive or attractive" ],
   "knowledgeable": [ "intelligent" ],
-  // positive words starting with the letter l
   "laid-back": [ "easy-going" ],
   "lambent": [ "softly brilliant" ],
   "laudable": [ "praiseworthy" ],
@@ -142,7 +130,6 @@
   "lively": [ "full of life" ],
   "lovely": [ "full of love" ],
   "luminous": [ "emitting light or full of light" ],
-  // positive words starting with the letter m
   "magical": [ "enchanting" ],
   "magnetic": [ "having an ability or power to attract" ],
   "magnificent": [ "splendid or elegant in appearance" ],
@@ -153,12 +140,10 @@
   "miraculous": [ "so wonderful and astounding as to suggest a miracle" ],
   "motivated": [ "enthusiastic striving toward goal or action" ],
   "moving": [ "capable of arousing deep emotion" ],
-  // positive words starting with the letter n
   "neighborly": [ "exhibiting or having the qualities of a friendly neighbor" ],
   "nifty": [ "very good" ],
   "noble": [ "showing or having qualities of high moral, rank or dignity" ],
   "numinous": [ "awe-inspiring" ],
-  // positive words starting with the letter o
   "obedient": [ "dutifully complying with the commands or instructions of those in authority" ],
   "obliging": [ "showing readiness to do favors to others" ],
   "observant": [ "paying close attention to details" ],
@@ -173,7 +158,6 @@
   "out-of-this-world": [ "extremely impressive or enjoyable" ],
   "outstanding": [ "prominent or noticeable of others of its kind" ],
   "overjoyed": [ "extremely happy and joyful" ],
-  // positive words starting with the letter p
   "pally": [ "friendly" ],
   "paramount": [ "supreme" ],
   "passionate": [ "having or showing powerful emotions" ],
@@ -198,11 +182,9 @@
   "promising": [ "showing or having the possibility of achievement or excellence" ],
   "proud": [ "feeling of self-respect or self-worth;" ],
   "punctual": [ "prompt" ],
-  // positive words starting with the letter q
   "queenly": [ "a regal and distinguished woman" ],
   "quick-witted": [ "mentally sharp, nimble and alert" ],
   "quirky": [ "merry and unconventional" ],
-  // positive words starting with the letter r
   "rad": [ "excellent" ],
   "radiant": [ "emanating great love, joy or happiness" ],
   "rapturous": [ "filled with great joy or delight" ],
@@ -217,7 +199,6 @@
   "resourceful": [ "having the ability to find clever and quick ways to overcome difficulties" ],
   "respectable": [ "worthy of respect or high esteem" ],
   "revolutionary": [ "extraordinarily good and surprising" ],
-  // positive words starting with the letter s
   "saccharine": [ "extremely sweet" ],
   "sagacious": [ "acutely wise and insightful" ],
   "savvy": [ "well-informed, perceptive or shrewd" ],
@@ -231,7 +212,6 @@
   "spunky": [ "spirited" ],
   "stellar": [ "exceptional" ],
   "striking": [ "sensational or exciting in appearance or in effect" ],
-  // positive words starting with the letter t
   "teeming": [ "productive" ],
   "tender-hearted": [ "having a great sensibility and kindness" ],
   "thoughtful": [ "demonstrating careful consideration or thought" ],
@@ -241,18 +221,15 @@
   "trailblazing": [ "innovative" ],
   "transcendental": [ "superior; extraordinary" ],
   "tubular": [ "awesome; cool" ],
-  // positive words starting with the letter u
   "upbeat": [ "having a fast and positive tone" ],
   "uplifting": [ "inspiring hope or happiness" ],
   "upstanding": [ "respectable" ],
   "urbane": [ "polite" ],
-  // positive words starting with the letter v
   "valiant": [ "brave and courageous" ],
   "vibrant": [ "lively and bright" ],
   "victorious": [ "being the winner in something" ],
   "visionary": [ "one who has visions or positive ideas about future" ],
   "vivacious": [ "animated and lively" ],
-  // positive words starting with the letter w
   "warm": [ "kind and caring" ],
   "well-read": [ "highly educated" ],
   "whimsical": [ "playful and amusing" ],
@@ -264,14 +241,11 @@
   "wizardly": [ "remarkable in performance, execution or design" ],
   "wondrous": [ "extraordinary" ],
   "worldly": [ "very sophisticated" ],
-  // positive words starting with the letter x
   "xenial": [ "hospitable to others" ],
   "xenodochial": [ "friendly to strangers or guests" ],
-  // positive words starting with the letter y
   "yay": ["an expression of approval and excitement"],
   "yes":  [ "an affirmative answer or decision" ],
   "yummiest":  [ "the most delicious" ],
-  // positive words starting with the letter z
   "zappy": [ "energetic and lively" ],
   "zazzy": [ "flashy" ],
   "zealful": [ "passionate enthusiasm" ],
