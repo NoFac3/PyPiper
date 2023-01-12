@@ -28,8 +28,3 @@ def WordVector(word):
 def WordNorm(word):
     token = Tokenize(word)
     return token.vector_norm
-
-def RootWord(word):
-    lem = WNL()
-    w = lem.lemmatize("".join(word))
-    return w
