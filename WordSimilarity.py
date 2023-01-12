@@ -1,65 +1,50 @@
-'''
-Source From...
-Link: https://www.kaggle.com/code/cdabakoglu/word-vectors-cosine-similarity/notebook
-Author: Caner Dabakoglu
+from nltk.stem import WordNetLemmatizer as WNL
+import spacy
+nlp = spacy.load('en_core_web_lg')
 
-uses glove.6B.100d.txt
-from: https://www.kaggle.com/code/cdabakoglu/word-vectors-cosine-similarity/data
-Note: it's a large file (339,372 KB)
-'''
+def TokenizeOG(words):
+    tokens = nlp(words)
+    for token in token1:
+        text = token.text
+        blnVector = token.has_vector
+        vector_norm = token.vector_norm
+        Out_of_Vocab = token.is_oov
+    token1, token2 = tokens[0], tokens[1]
+    return token1, token2
 
-import numpy as np
-import pandas as pd
-import os
-for dirname, _, filenames in os.walk('/kaggle/input'):
-    for filename in filenames:
-        print(os.path.join(dirname, filename))
+def Tokenize(word):
+    token = nlp(word)
+    return token
 
-class ws(object):
+def token_vector(word):
+    token = Tokenize(word)
+    if token.has_vector==True:
+        return token.vector
+    else:
+        return 0
 
-    def loadData():
-        with open("glove.txt",'r', encoding='utf-8') as file:
-            data = file.readlines()
-        for i in range(len(data)):
-            data[i] = data[i][:-1]
-        data_dict = dict()
-        for i in range(len(data)):
-            split_data = data[i].split()
-            data_dict[split_data[0]] = np.array(split_data[1:]).astype('float64')
+def token_vector_norm(word):
+    token = Tokenize(word)
+    return token.vector_norm
 
-        #data_dict["the"]
-        return data_dict
+def Similarity(words):
+    token1, token2 = Tokenize(words)
+    return token1.similarity(token2)
 
-    def cosine_similarity(a, b):
-        nominator = np.dot(a, b)
-        a_norm = np.sqrt(np.sum(a**2))
-        b_norm = np.sqrt(np.sum(b**2))
-        denominator = a_norm * b_norm
-        cosine_similarity = nominator / denominator
-        return cosine_similarity
+def SimilarLoop(words):
+    S=[]
+    for k in range(len(words)-1):
+        for j in range(1,len(words)):
+            s = words[k]+" "+words[j]
+            S.append(Similarity(s))
+    return S
 
-    def find_word(a, b, c, data_dict):
-        a, b, c = a.lower(), b.lower(), c.lower()
-        a_vector, b_vector, c_vector = data_dict[a], data_dict[b], data_dict[c]
-        all_words = data_dict.keys()
-        max_cosine_similarity = -1000
-        best_match_word = None
-        for word in all_words:
-            if word in [a, b, c]:
-                continue
-            c = ws()
-            cos_sim = c.cosine_similarity(np.subtract(b_vector, a_vector), np.subtract(data_dict[word], c_vector))
-            if cos_sim > max_cosine_similarity:
-                max_cosine_similarity = cos_sim
-                best_match_word = word
-        return best_match_word, cos_sim
+def WordNorm(word):
+    token = nlp(word)
+    norm = token.vector_norm
+    return norm
 
-    def wordBag(words_bag, data_dict):
-        for words in words_bag:
-            f = ws()
-            d, cos_sim = f.find_word(*words, data_dict)
-            print("({}, {}) ----> ({}, {}) with {} difference".format(*words, d, cos_sim))
-
-    def determinant(a):
-        return np.sqrt(np.sum(a**2))
-
+def RootWord(word):
+    lem = WNL()
+    w = lem.lemmatize("".join(word))
+    return w
