@@ -48,3 +48,15 @@ def RootWord(word):
     lem = WNL()
     w = lem.lemmatize("".join(word))
     return w
+
+from numpy import log as ln
+
+def entropy(dist):
+    su = 0
+    for p in dist:
+        r = p/sum(dist)
+        if r==0:
+            su+=0
+        else:
+            su+= -r*(ln(r))
+    return su/ln(2)
