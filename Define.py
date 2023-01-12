@@ -6,15 +6,15 @@ from py_thesaurus import Thesaurus
 from nltk.stem import WordNetLemmatizer as WNL
 import Memory as M
 
-def wordTag(self,user_input):
+def wordTag(user_input):
         words = nltk.word_tokenize(user_input)
         tag = nltk.pos_tag(words)
         return tag
 
-def RootWord(word):
+def RootWord(w):
     lem = WNL()
-    w = lem.lemmatize("".join(word))
-    return w
+    root_word = lem.lemmatize("".join(word))
+    return root_word
 
 def getDef(w):
         word = w
